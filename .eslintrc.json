@@ -1,0 +1,40 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2019
+  },
+  "rules": {
+    "comma-dangle": ["error", "never"],
+    "no-plusplus": 0,
+    "no-param-reassign": 0,
+    "no-unused-vars": 0,
+    "no-undef": 0,
+    "camelcase": "off", // desabilitado para evitar erros relacionados a route params ou valores do banco de dados
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "jsxSingleQuote": true,
+        "singleQuote": true,
+        "semi": true,
+        "arrowParens": "avoid",
+        "function-paren-newline": "avoid"
+        }
+    ]
+  }
+}
